@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import GallowayPic from "../static/Galloway.png";
 import HoscoLogo from "../static/hosco.jpg";
 import SplitterzGif from "../static/SplitterzGif.gif";
 
@@ -42,7 +43,10 @@ const Description = styled.p`
   font-size: 1.6rem;
   color: white;
   margin: 0;
-  text-align: center;
+
+  @media (max-width: 576px) {
+    text-align: center;
+  }
 `;
 
 const Link = styled.a`
@@ -52,7 +56,7 @@ const Link = styled.a`
 `;
 
 const Header = styled.h3`
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: bold;
   color: white;
   margin: 0;
@@ -61,7 +65,6 @@ const Header = styled.h3`
 
   @media (max-width: 860px) {
     margin: 0 auto;
-    text-align: center;
   }
 `;
 
@@ -102,7 +105,7 @@ const projects = [
     link: "www.crowdvotecrypto.com"
   },
   {
-    img: SplitterzGif,
+    img: GallowayPic,
     header: "Dithmarscher Galloways",
     text:
       "A website I created for a friend of mine. He and his family sell meat from galloway cows"
