@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import GallowayPic from "../static/Galloway.png";
+import CWCLogo from "../static/CWCLogo.png";
+import GallowayPic from "../static/GallowayLogo.jpg";
 import HoscoLogo from "../static/hosco.jpg";
 import SplitterzGif from "../static/SplitterzGif.gif";
 
@@ -15,7 +16,7 @@ const Project = styled.div`
   grid-template-columns: 1fr 5fr 1fr;
   grid-gap: 20px;
   grid-template-areas: "Image Header ." "Image Description Link";
-  padding: 20px;
+  padding: 60px 0;
 
   @media (max-width: 860px) {
     display: flex;
@@ -36,6 +37,7 @@ const ProjectName = styled.h5`
   grid-area: Header;
   font-size: 2.2rem;
   color: white;
+  margin: 0;
 `;
 
 const Description = styled.p`
@@ -50,9 +52,15 @@ const Description = styled.p`
 `;
 
 const Link = styled.a`
-  font-size: 1.8rem;
+  font-size: 5rem;
   grid-area: Link;
   text-align: center;
+  color: white;
+  cursor: pointer;
+
+  :hover {
+    font-size: 6rem;
+  }
 `;
 
 const Header = styled.h3`
@@ -78,7 +86,7 @@ const Projects = ({}) => {
           <ProjectName>{header}</ProjectName>
           <Description>{text}</Description>
           <Link target="_blank" href={link}>
-            Check it out!
+            <i className="fa fa-arrow-right" />
           </Link>
         </Project>
       ))}
@@ -98,11 +106,11 @@ const projects = [
       "https://play.google.com/store/apps/details?id=com.EnterRavement.Splitterz&hl=en"
   },
   {
-    img: HoscoLogo,
+    img: CWCLogo,
     header: "CrowdVoteCrypto",
     text:
       "a website to inform about crypto currency prices and exchange about the development of the different coins. Sadly the API's I used to get the cryptocurreny data are not working anymore and I haven't found any time to fix it 😅",
-    link: "www.crowdvotecrypto.com"
+    link: "https://www.crowdvotecrypto.com"
   },
   {
     img: GallowayPic,

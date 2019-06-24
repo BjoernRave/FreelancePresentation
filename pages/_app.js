@@ -20,10 +20,10 @@ html {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   font-size: 10px;
-  transition: all linear 0.1s;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  transition: all linear 0.1s
 }
 `;
 

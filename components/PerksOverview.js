@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import local from "../static/bcn.png";
+import hands from "../static/hands.png";
+import tools from "../static/ModernTools.png";
+import speed from "../static/PageSpeed.png";
 import responsive from "../static/responsive-web-design.png";
 import seo from "../static/SeoGoogle.png";
 import Perk, { Image, ImageWrapper, PerkWrapper } from "./Perk";
@@ -116,7 +119,7 @@ const content = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum beatae quibusdam inventore. Vitae perspiciatis cupiditate consequuntur tenetur, sequi ipsa dolorum at exercitationem illum est sed veniam a, sit omnis."
   },
   {
-    img: responsive,
+    img: hands,
     StyledPerk: FlexiblePerk,
     header: "Flexible Cooperation ",
     text:
@@ -130,14 +133,14 @@ const content = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum beatae quibusdam inventore. Vitae perspiciatis cupiditate consequuntur tenetur, sequi ipsa dolorum at exercitationem illum est sed veniam a, sit omnis."
   },
   {
-    img: responsive,
+    img: tools,
     StyledPerk: ModernPerk,
     header: "Modern Technologies",
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum beatae quibusdam inventore. Vitae perspiciatis cupiditate consequuntur tenetur, sequi ipsa dolorum at exercitationem illum est sed veniam a, sit omnis."
   },
   {
-    img: responsive,
+    img: speed,
     StyledPerk: SpeedPerk,
     header: "Loading Speed",
     text:

@@ -13,7 +13,7 @@ export default function Meta() {
         defer
         src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
         integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       />
       <link
         href="https://fonts.googleapis.com/css?family=Roboto"

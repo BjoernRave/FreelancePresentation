@@ -7,6 +7,7 @@ const PersonWrapper = styled.section`
   align-items: center;
   padding: 80px 10%;
   background-color: black;
+  padding-bottom: 300px;
 
   @media (max-width: 860px) {
     flex-direction: column;
@@ -43,7 +44,7 @@ export default function Person() {
       <TextBox>
         <PersonHeader>Hi, I am Björn Rave</PersonHeader>
         <PersonText>
-          I am a 23 years old and originally from germany. I am a software
+          I am 23 years old and originally from germany. I am a software
           developer and website creator
         </PersonText>
       </TextBox>
