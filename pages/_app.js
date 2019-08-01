@@ -1,16 +1,8 @@
-import { NextSeo } from "next-seo";
 import App, { Container } from "next/app";
 import { normalize } from "polished";
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 import Meta from "../components/Meta";
-
-const title = "Rahwn Websites";
-
-const description =
-  "Website to promote my freelance skills as a software developer for websites";
-
-const url = "https://www.bjoern-rave.tech";
 
 const GlobalStyles = createGlobalStyle`
 ${normalize()}
@@ -34,19 +26,6 @@ class MyApp extends App {
     return (
       <Container>
         <Meta />
-        <NextSeo
-          title={title}
-          description={description}
-          canonical={url}
-          openGraph={{
-            url,
-            description,
-            title
-          }}
-          twitter={{
-            handle: "@RaveBjorn"
-          }}
-        />
         <GlobalStyles />
         <Component {...pageProps} />
       </Container>

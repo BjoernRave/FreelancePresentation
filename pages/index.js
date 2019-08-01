@@ -112,8 +112,8 @@ export default function Index() {
         <BottomSection>
           <Person />
           <Projects />
-          <Contact href="mailto:bjoern.rave@gmail.com">
-            Get in Contact <i className="fa fa-envelope" />
+          <Contact rel="noopener" href="mailto:bjoern.rave@gmail.com">
+            Get in Contact <i className="uil uil-envelope" />
           </Contact>
         </BottomSection>
         <Footer />

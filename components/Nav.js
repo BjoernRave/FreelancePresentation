@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../static/Raven1.jpg";
+import logo from "../static/Raven1.png";
 
 const NavBar = styled.nav`
   display: flex;
@@ -66,19 +66,24 @@ export default function Navbar() {
       </Logo>
 
       <IconGroup>
-        <NavItem href="mailto:bjoern.rave@gmail.com">
-          <i className="fa fa-envelope" />
+        <NavItem rel="noopener" href="mailto:bjoern.rave@gmail.com">
+          <i className="uil uil-envelope" />
           <ItemLabel>Write me!</ItemLabel>
         </NavItem>
-        <NavItem href="https://github.com/BjoernRave" target="_blank">
-          <i className="fab fa-github" />
+        <NavItem
+          rel="noopener"
+          href="https://github.com/BjoernRave"
+          target="_blank"
+        >
+          <i className="uil uil-github" />
           <ItemLabel>See my code</ItemLabel>
         </NavItem>
         <NavItem
+          rel="noopener"
           href="https://www.linkedin.com/in/bjoern-rave/"
           target="_blank"
         >
-          <i className="fab fa-linkedin" />
+          <i className="uil uil-linkedin" />
           <ItemLabel>See my experience</ItemLabel>
         </NavItem>
       </IconGroup>

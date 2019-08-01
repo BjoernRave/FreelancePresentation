@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 
 export const Image = styled.img`
@@ -43,26 +43,10 @@ const PerkHeader = styled.h5`
 `;
 
 export default function Feature({ img, header, text, StyledPerk }) {
-  const ref = useRef(null);
-  // const isOnScreen = useOnScreen(ref, "-50px");
-
-  // useEffect(() => {
-  //   if (isOnScreen) {
-  //     set({ opacity: 1, transform: "scale(1)" });
-  //   }
-  // }, [isOnScreen]);
-
-  // const Perk = animated(StyledPerk);
-
-  // const [props, set] = useSpring(() => ({
-  //   from: { opacity: 0, transform: "scale(0)" },
-  //   config: { delay: 1500, mass: 5, tension: 80 }
-  // }));
-
   return (
-    <StyledPerk ref={ref}>
+    <StyledPerk>
       <ImageWrapper>
-        <Image src={img} alt="" />
+        <Image alt={header} src={img} alt="" />
       </ImageWrapper>
       <PerkHeader>{header}</PerkHeader>
       <PerkDescription>{text}</PerkDescription>

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import image from "../static/me.jpg";
+import image from "../static/me.png";
 
 const PersonWrapper = styled.section`
   display: flex;
@@ -40,7 +40,7 @@ const PersonText = styled.p`
 export default function Person() {
   return (
     <PersonWrapper>
-      <Image src={image} />
+      <Image alt="Picture of me" src={image} />
       <TextBox>
         <PersonHeader>Hi, I am Björn Rave</PersonHeader>
         <PersonText>

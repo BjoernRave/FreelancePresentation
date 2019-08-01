@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CWCLogo from "../static/CWCLogo.png";
-import GallowayPic from "../static/GallowayLogo.jpg";
-import HoscoLogo from "../static/hosco.jpg";
+import HoscoLogo from "../static/hosco.png";
 import SplitterzGif from "../static/SplitterzGif.gif";
 
 const Wrapper = styled.section`
@@ -85,11 +84,11 @@ const Projects = ({}) => {
       <Header>Projects</Header>
       {projects.map(({ img, header, text, link }, index) => (
         <Project key={index}>
-          <Image src={img} />
+          <Image alt={header} src={img} />
           <ProjectName>{header}</ProjectName>
           <Description>{text}</Description>
-          <Link target="_blank" href={link}>
-            <i className="fa fa-arrow-right" />
+          <Link rel="noopener" target="_blank" href={link}>
+            <i className="uil uil-external-link-alt" />
           </Link>
         </Project>
       ))}
