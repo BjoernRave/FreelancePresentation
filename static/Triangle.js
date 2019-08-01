@@ -46,6 +46,7 @@ const Triangle = () => {
       <TriangleSVG
         version="1.1"
         viewBox="0 0 210.57 79.395"
+        width="90vw"
         xmlns="http://www.w3.org/2000/svg"
       >
         <g transform="translate(.097427 -72.082)">

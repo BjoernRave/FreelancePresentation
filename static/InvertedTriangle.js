@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledInvertedTriangle = styled.div`
-  width: 100%;
   position: absolute;
-  bottom: 245px;
+  width: 100%;
+  bottom: -305px;
   z-index: -1;
 
   @media (max-width: 860px) {

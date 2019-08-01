@@ -7,7 +7,7 @@ const PersonWrapper = styled.section`
   align-items: center;
   padding: 80px 10%;
   background-color: black;
-  padding-bottom: 300px;
+  padding-bottom: 100px;
 
   @media (max-width: 860px) {
     flex-direction: column;
@@ -15,7 +15,7 @@ const PersonWrapper = styled.section`
 `;
 
 const Image = styled.img`
-  width: 30%;
+  width: 60%;
   height: auto;
 
   @media (max-width: 860px) {
@@ -44,8 +44,10 @@ export default function Person() {
       <TextBox>
         <PersonHeader>Hi, I am Björn Rave</PersonHeader>
         <PersonText>
-          I am 23 years old and originally from germany. I am a software
-          developer and website creator
+          Hello, I am Björn Rave, a fullstack engineering and passionate web
+          developer from germany. Wirkung in a thriving startup for the last
+          year I could gain a lot of insights and gain knowledge in all areas
+          neccessary to run and maintain a high demand enterprise-grade website.
         </PersonText>
       </TextBox>
     </PersonWrapper>

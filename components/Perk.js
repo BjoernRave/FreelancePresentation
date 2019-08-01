@@ -27,6 +27,7 @@ export const ImageWrapper = styled.div`
 
 const PerkDescription = styled.p`
   font-size: 1.6rem;
+  text-align: center;
 
   @media (max-width: 860px) {
     font-size: 1.4rem;

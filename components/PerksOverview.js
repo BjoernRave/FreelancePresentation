@@ -70,7 +70,7 @@ const ResponsivePerk = styled(PerkWrapper)`
 
 const PerksSection = styled.section`
   display: grid;
-  grid-gap: 5%;
+  grid-gap: 10%;
   grid-template-columns: auto auto auto;
   grid-template-areas:
     ". local ."
@@ -78,6 +78,7 @@ const PerksSection = styled.section`
     ". responsive ."
     "speed . flexible";
   margin: 0 5%;
+  margin-bottom: 300px;
 
   @media screen and (max-width: 860px) {
     display: flex;
@@ -109,41 +110,41 @@ const content = [
     StyledPerk: SeoPerk,
     header: "Search Engine Optimized",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum beatae quibusdam inventore. Vitae perspiciatis cupiditate consequuntur tenetur, sequi ipsa dolorum at exercitationem illum est sed veniam a, sit omnis."
+      "It’s not all about the look of your website, but the internal values matter as well! When developing a website there a various factor to pay attention to so that search engines can show your website to the right people."
   },
   {
     img: responsive,
     StyledPerk: ResponsivePerk,
     header: "Responsive Web Design",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum beatae quibusdam inventore. Vitae perspiciatis cupiditate consequuntur tenetur, sequi ipsa dolorum at exercitationem illum est sed veniam a, sit omnis."
+      "This means my websites look good on multiple screen sizes, so no matter if your customer is using their phone, laptop or tablet, your website will always look good"
   },
   {
     img: hands,
     StyledPerk: FlexiblePerk,
     header: "Flexible Cooperation ",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum beatae quibusdam inventore. Vitae perspiciatis cupiditate consequuntur tenetur, sequi ipsa dolorum at exercitationem illum est sed veniam a, sit omnis."
+      "I value partnerships where both parties can benefit. I am fully transparent with my work and the amount of time I require for your project"
   },
   {
     img: local,
     StyledPerk: LocalPerk,
-    header: "Local",
+    header: "Location Independent",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum beatae quibusdam inventore. Vitae perspiciatis cupiditate consequuntur tenetur, sequi ipsa dolorum at exercitationem illum est sed veniam a, sit omnis."
+      "No matter where you or your company is based, because of the technologies we have available nowaddays, collaboration was never easier. "
   },
   {
     img: tools,
     StyledPerk: ModernPerk,
     header: "Modern Technologies",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum beatae quibusdam inventore. Vitae perspiciatis cupiditate consequuntur tenetur, sequi ipsa dolorum at exercitationem illum est sed veniam a, sit omnis."
+      "My website creation tools are following the newest standards on the market. Do you need a Progressive Web App? I can create it. Do you want source code, with a clear structure, so other people could eventually pick it up again and extend it right away?"
   },
   {
     img: speed,
     StyledPerk: SpeedPerk,
     header: "Loading Speed",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum beatae quibusdam inventore. Vitae perspiciatis cupiditate consequuntur tenetur, sequi ipsa dolorum at exercitationem illum est sed veniam a, sit omnis."
+      "No matter if you only need a static webpage or require more advanced features, like dynamic content, my websites will always be blazing fast."
   }
 ];

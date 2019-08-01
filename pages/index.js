@@ -31,6 +31,7 @@ const MiddleSection = styled.section`
 const BottomSection = styled.section`
   background-color: black;
   padding-bottom: 50px;
+  padding-top: 100px;
 `;
 
 const TopHeader = styled.h3`
@@ -58,15 +59,6 @@ const BottomHeader = styled.h3`
 
   @media (max-width: 860px) {
     font-size: 3rem;
-  }
-`;
-
-const BottomBox = styled.div`
-  height: 250px;
-  background-color: black;
-
-  @media (max-width: 860px) {
-    display: none;
   }
 `;
 
@@ -116,7 +108,6 @@ export default function Index() {
           <Triangle />
           <PerksOverview />
           <InvertedTriangle />
-          <BottomBox />
         </MiddleSection>
         <BottomSection>
           <Person />
