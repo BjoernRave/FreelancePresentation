@@ -61,7 +61,7 @@ export default function Navbar() {
   return (
     <NavBar>
       <Logo>
-        <LogoImage src={logo} alt="" />
+        <LogoImage src={logo} alt="Rahwn Websites Logo" />
         <LogoText>Rahwn Websites</LogoText>
       </Logo>
 

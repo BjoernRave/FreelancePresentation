@@ -131,7 +131,7 @@ const content = [
     StyledPerk: LocalPerk,
     header: "Location Independent",
     text:
-      "No matter where you or your company is based, because of the technologies we have available nowaddays, collaboration was never easier. "
+      "No matter where you or your company is based, because of the technologies we have available nowadays, collaboration was never easier. "
   },
   {
     img: tools,

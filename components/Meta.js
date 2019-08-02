@@ -20,7 +20,7 @@ export default function Meta() {
       />
       <meta
         name="viewport"
-        content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
       />
       <link rel="icon" href="/static/favicon.ico" />
       <meta name="twitter:url" content="https://bjoern-rave.tech" />

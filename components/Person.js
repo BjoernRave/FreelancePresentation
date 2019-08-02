@@ -44,9 +44,9 @@ export default function Person() {
       <TextBox>
         <PersonHeader>Hi, I am Björn Rave</PersonHeader>
         <PersonText>
-          Hello, I am Björn Rave, a fullstack engineering and passionate web
-          developer from germany. Wirkung in a thriving startup for the last
-          year I could gain a lot of insights and gain knowledge in all areas
+          Hello, I am Björn Rave, a fullstack engineer and passionate web
+          developer from germany. Working in a thriving startup for the last
+          year I could gain a lot of insights and knowledge in all areas
           neccessary to run and maintain a high demand enterprise-grade website.
         </PersonText>
       </TextBox>

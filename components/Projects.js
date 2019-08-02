@@ -124,7 +124,7 @@ const projects = [
     img: HoscoLogo,
     header: "Hosco",
     text:
-      "This was the project, where I really became a professional programmer. I was working for 9 months in a startup in Barcelona, which is on its mission to conquer the international job market. It's core is a website, similar to Linkedin, but focussed on the hospitality sector. I was working full-time as a FullStack Developer on the website, added new features, polished old thing. Because of the small size I could get insights in every aspect of software development.",
+      "This was the project, where I really became a professional programmer. I was working for 9 months in a startup in Barcelona, which is on its mission to conquer the international job market. It's core is a website, similar to Linkedin, but focussed on the hospitality sector. I was working full-time as a full-stack engineer on the website, added new features, polished old thing. Because of the small size I could get insights in every aspect of software development.",
     link: "https://www.hosco.com"
   }
   // {
