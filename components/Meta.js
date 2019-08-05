@@ -15,8 +15,12 @@ export default function Meta() {
         href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css"
       />
       <meta
+        name="google-site-verification"
+        content="B4YxpSBmP-Mtic0JGstyOKvRwaDdxgPGQoq5FJTPvVI"
+      />
+      <meta
         name="description"
-        content="Here I offer my services as a web developer. I am an experiencend full-stack engineer, capable of advanced tasks"
+        content="Here I offer my services as a web developer. I am an experiencend full-stack engineer from germany, available to help you with your online project."
       />
       <meta
         name="viewport"
