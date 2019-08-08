@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import local from "../static/bcn.png";
-import hands from "../static/hands.png";
+import hands from "../static/Cooperation.png";
 import tools from "../static/ModernTools.png";
 import speed from "../static/PageSpeed.png";
 import responsive from "../static/responsive-web-design.png";
 import seo from "../static/SeoGoogle.png";
 import Perk, { Image, ImageWrapper, PerkWrapper } from "./Perk";
+import { useAnimation } from "framer-motion";
+import { useScrollPosition } from "../lib/useScrollPosition";
 
 const LocalPerk = styled(PerkWrapper)`
   grid-area: local;
@@ -79,6 +81,7 @@ const PerksSection = styled.section`
     "speed . flexible";
   margin: 0 5%;
   margin-bottom: 300px;
+  padding-top: 150px;
 
   @media screen and (max-width: 860px) {
     display: flex;
@@ -89,10 +92,31 @@ const PerksSection = styled.section`
 `;
 
 export default function PerksOverview() {
+  const [animationPlayed, setAnimationPlayed] = useState(false);
+  const scrollPosition = useScrollPosition();
+  const ref = useRef(null);
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (ref.current.getBoundingClientRect().y <= 600 && !animationPlayed) {
+      console.log("start");
+
+      animation.start(i => ({
+        opacity: 1,
+        scale: 1,
+        transition: { delay: i * 0.1 }
+      }));
+      setAnimationPlayed(true);
+    }
+  }, [scrollPosition]);
+
   return (
-    <PerksSection>
+    <PerksSection ref={ref}>
       {content.map(({ header, text, img, StyledPerk }, index) => (
         <Perk
+          initial={{ opacity: 0, scale: 0 }}
+          animate={animation}
+          custom={index}
           key={index}
           header={header}
           img={img}
@@ -110,14 +134,14 @@ const content = [
     StyledPerk: SeoPerk,
     header: "Search Engine Optimized",
     text:
-      "It’s not all about the look of your website, but the internal values matter as well! When developing a website there a various factor to pay attention to so that search engines can show your website to the right people."
+      "It’s not all about the look of your website, but the internal values matter as well! When developing a website there are various factors to pay attention to so that search engines can show your website to the right people."
   },
   {
     img: responsive,
     StyledPerk: ResponsivePerk,
     header: "Responsive Web Design",
     text:
-      "This means my websites look good on multiple screen sizes, so no matter if your customer is using their phone, laptop or tablet, your website will always look good"
+      "This means my websites look good on multiple screen sizes, so no matter if your customer is using their phone, laptop or tablet, your website will always look great"
   },
   {
     img: hands,
@@ -138,7 +162,7 @@ const content = [
     StyledPerk: ModernPerk,
     header: "Modern Technologies",
     text:
-      "My website creation tools are following the newest standards on the market. Do you need a Progressive Web App? I can create it. Do you want source code, with a clear structure, so other people could eventually pick it up again and extend it right away?"
+      "My website creation tools are following the newest standards on the market. Do you need a Progressive Web App? I can create it. Do you want source code, with a clear structure, so other people could eventually pick it up again and extend it right away? No problem"
   },
   {
     img: speed,

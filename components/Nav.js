@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../static/Raven1.png";
+import logo from "../static/Logo.png";
 
 const NavBar = styled.nav`
   display: flex;
@@ -51,8 +51,12 @@ const IconGroup = styled.div`
   display: flex;
 `;
 
+const Icon = styled.i`
+  font-size: 36px;
+`;
+
 const ItemLabel = styled.label`
-  font-size: 10px;
+  font-size: 16px;
   cursor: pointer;
   text-align: center;
 `;
@@ -67,7 +71,7 @@ export default function Navbar() {
 
       <IconGroup>
         <NavItem rel="noopener" href="mailto:bjoern.rave@gmail.com">
-          <i className="uil uil-envelope" />
+          <Icon className="uil uil-envelope" />
           <ItemLabel>Write me!</ItemLabel>
         </NavItem>
         <NavItem
@@ -75,7 +79,7 @@ export default function Navbar() {
           href="https://github.com/BjoernRave"
           target="_blank"
         >
-          <i className="uil uil-github" />
+          <Icon className="uil uil-github" />
           <ItemLabel>See my code</ItemLabel>
         </NavItem>
         <NavItem
@@ -83,7 +87,7 @@ export default function Navbar() {
           href="https://www.linkedin.com/in/bjoern-rave/"
           target="_blank"
         >
-          <i className="uil uil-linkedin" />
+          <Icon className="uil uil-linkedin" />
           <ItemLabel>See my experience</ItemLabel>
         </NavItem>
       </IconGroup>

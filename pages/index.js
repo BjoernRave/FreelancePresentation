@@ -6,10 +6,8 @@ import PerksOverview from "../components/PerksOverview";
 import Person from "../components/Person";
 import Projects from "../components/Projects";
 import TypeWriter from "../components/TypeWriter";
-import InvertedTriangle from "../static/InvertedTriangle";
-import Triangle from "../static/Triangle";
-
-const breakPoints = { s: 860, m: 768, l: 992, xl: 1200 };
+import InvertedTriangle from "../components/InvertedTriangle";
+import Triangle from "../components/Triangle";
 
 const FirstView = styled.div`
   display: grid;
@@ -95,29 +93,27 @@ const Contact = styled.a`
 export default function Index() {
   return (
     <>
-      <main>
-        <TopSection>
-          <NavBar />
-          <FirstView>
-            <TopHeader>I can create</TopHeader>
-            <TypeWriter />
-            <BottomHeader>for you.</BottomHeader>
-          </FirstView>
-        </TopSection>
-        <MiddleSection>
-          <Triangle />
-          <PerksOverview />
-          <InvertedTriangle />
-        </MiddleSection>
-        <BottomSection>
-          <Person />
-          <Projects />
-          <Contact rel="noopener" href="mailto:bjoern.rave@gmail.com">
-            Get in Contact <i className="uil uil-envelope" />
-          </Contact>
-        </BottomSection>
-        <Footer />
-      </main>
+      <TopSection>
+        <NavBar />
+        <FirstView>
+          <TopHeader>I can create</TopHeader>
+          <TypeWriter />
+          <BottomHeader>for you.</BottomHeader>
+        </FirstView>
+      </TopSection>
+      <MiddleSection>
+        <Triangle />
+        <PerksOverview />
+        <InvertedTriangle />
+      </MiddleSection>
+      <BottomSection>
+        <Person />
+        <Projects />
+        <Contact rel="noopener" href="mailto:bjoern.rave@gmail.com">
+          Get in Contact <i className="uil uil-envelope" />
+        </Contact>
+      </BottomSection>
+      <Footer />
     </>
   );
 }

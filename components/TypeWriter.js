@@ -27,17 +27,17 @@ export default function TypeWriter() {
   return (
     <StyledTyping loop={true} cursor={<Cursor />} speed={10}>
       <MainHeader>a web presence</MainHeader>
-      <Typing.Backspace delay={2000} speed={-20} count={26} />
+      <Typing.Backspace delay={2000} speed={-20} count={15} />
       <MainHeader>an image gallery</MainHeader>
-      <Typing.Backspace delay={2500} speed={-20} count={26} />
+      <Typing.Backspace delay={2500} speed={-20} count={17} />
       <MainHeader>a contact form</MainHeader>
-      <Typing.Backspace delay={2000} speed={-20} count={26} />
-      <MainHeader>fully customizable</MainHeader>
-      <Typing.Backspace delay={2000} speed={-20} count={26} />
+      <Typing.Backspace delay={2000} speed={-20} count={15} />
+      <MainHeader>fully customized experiences</MainHeader>
+      <Typing.Backspace delay={2000} speed={-20} count={29} />
       <MainHeader>complex solutions</MainHeader>
-      <Typing.Backspace delay={1700} speed={-20} count={26} />
+      <Typing.Backspace delay={1700} speed={-20} count={18} />
       <MainHeader>an e-commerce store</MainHeader>
-      <Typing.Backspace delay={2000} speed={-20} count={26} />
+      <Typing.Backspace delay={2000} speed={-20} count={20} />
     </StyledTyping>
   );
 }
