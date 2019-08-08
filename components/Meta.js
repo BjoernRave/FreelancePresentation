@@ -17,7 +17,7 @@ export default function Meta() {
       />
       <meta
         name="google-site-verification"
-        content="B4YxpSBmP-Mtic0JGstyOKvRwaDdxgPGQoq5FJTPvVI"
+        content="Ae-htyf1XdbadkG7FXD6BbOsyw_oYgzsmqjMlX7_Krc"
       />
       <meta
         name="description"
