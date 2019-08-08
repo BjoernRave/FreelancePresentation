@@ -1,21 +1,20 @@
 {
-  "name": "freelancewebsite",
+  "name": "rahwnwebsites",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Online Presence of my web development services",
+  "main": "pages/index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
-    "now-build": "next build && next export -o dist"
+    "export": "next export"
   },
   "keywords": [],
   "author": "Bjoern Rave",
   "license": "ISC",
   "dependencies": {
-    "framer-motion": "^1.4.2",
-    "intersection-observer": "^0.7.0",
+    "framer-motion": "^1.5.0",
+    "imagemin-optipng": "^7.0.0",
     "next": "^9.0.3",
     "next-optimized-images": "^2.5.3",
     "next-seo": "^2.0.0",
@@ -24,8 +23,5 @@
     "react-dom": "^16.8.6",
     "react-typing-animation": "^1.6.2",
     "styled-components": "^4.3.2"
-  },
-  "devDependencies": {
-    "@types/core-js": "^2.5.2"
   }
 }

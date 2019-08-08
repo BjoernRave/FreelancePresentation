@@ -130,32 +130,18 @@ export default function PerksOverview() {
 
 const content = [
   {
-    img: seo,
-    StyledPerk: SeoPerk,
-    header: "Search Engine Optimized",
-    text:
-      "It’s not all about the look of your website, but the internal values matter as well! When developing a website there are various factors to pay attention to so that search engines can show your website to the right people."
-  },
-  {
-    img: responsive,
-    StyledPerk: ResponsivePerk,
-    header: "Responsive Web Design",
-    text:
-      "This means my websites look good on multiple screen sizes, so no matter if your customer is using their phone, laptop or tablet, your website will always look great"
-  },
-  {
-    img: hands,
-    StyledPerk: FlexiblePerk,
-    header: "Flexible Cooperation ",
-    text:
-      "I value partnerships where both parties can benefit. I am fully transparent with my work and the amount of time I require for your project"
-  },
-  {
     img: local,
     StyledPerk: LocalPerk,
     header: "Location Independent",
     text:
       "No matter where you or your company is based, because of the technologies we have available nowadays, collaboration was never easier. "
+  },
+  {
+    img: seo,
+    StyledPerk: SeoPerk,
+    header: "Search Engine Optimized",
+    text:
+      "It’s not all about the look of your website, but the internal values matter as well! When developing a website there are various factors to pay attention to so that search engines can show your website to the right people."
   },
   {
     img: tools,
@@ -165,10 +151,24 @@ const content = [
       "My website creation tools are following the newest standards on the market. Do you need a Progressive Web App? I can create it. Do you want source code, with a clear structure, so other people could eventually pick it up again and extend it right away? No problem"
   },
   {
+    img: responsive,
+    StyledPerk: ResponsivePerk,
+    header: "Responsive Web Design",
+    text:
+      "This means my websites look good on multiple screen sizes, so no matter if your customer is using their phone, laptop or tablet, your website will always look great"
+  },
+  {
     img: speed,
     StyledPerk: SpeedPerk,
     header: "Loading Speed",
     text:
       "No matter if you only need a static webpage or require more advanced features, like dynamic content, my websites will always be blazing fast."
+  },
+  {
+    img: hands,
+    StyledPerk: FlexiblePerk,
+    header: "Flexible Cooperation ",
+    text:
+      "I value partnerships where both parties can benefit. I am fully transparent with my work and the amount of time I require for your project"
   }
 ];
