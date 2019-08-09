@@ -62,7 +62,6 @@ const BottomHeader = styled.h3`
 
 const Contact = styled.a`
   background-color: white;
-
   background: rgba(210, 255, 82, 1);
   background: linear-gradient(
     135deg,
@@ -74,7 +73,7 @@ const Contact = styled.a`
 
   border-radius: 20px;
   padding: 15px;
-  margin: 0 auto;
+  margin: 0 10px;
   font-size: 2.8rem;
   font-weight: bold;
   color: black;
@@ -88,6 +87,21 @@ const Contact = styled.a`
   i {
     margin-left: 5px;
   }
+`;
+
+const ContactBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const ContactHeader = styled.h3`
+  color: white;
+  font-size: 50px;
+`;
+
+const ContactButtons = styled.div`
+  display: flex;
 `;
 
 export default function Index() {
@@ -109,9 +123,25 @@ export default function Index() {
       <BottomSection>
         <Person />
         <Projects />
-        <Contact rel="noopener" href="mailto:bjoern.rave@gmail.com">
-          Get in Contact <i className="uil uil-envelope" />
-        </Contact>
+        <ContactBox>
+          <ContactHeader>Get in Contact</ContactHeader>
+          <ContactButtons>
+            <Contact
+              href="mailto:rahwn-websites@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Email App <i className="uil uil-envelope" />
+            </Contact>
+            <Contact
+              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=rahwnwebsites@gmail.com&su&cc&bcc&body&tf=1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Gmail <i className="uil uil-google" />
+            </Contact>
+          </ContactButtons>
+        </ContactBox>
       </BottomSection>
       <Footer />
     </>
