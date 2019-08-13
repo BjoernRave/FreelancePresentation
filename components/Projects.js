@@ -1,10 +1,10 @@
-import React, { useRef, useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import { useScrollPosition } from "../lib/useScrollPosition";
 import CWCLogo from "../static/CWCLogo.png";
 import HoscoLogo from "../static/hosco.png";
 import Splitterz from "../static/Splitterz.png";
-import { useScrollPosition } from "../lib/useScrollPosition";
-import { useAnimation, motion } from "framer-motion";
 
 const ProjectsWrapper = styled(motion.section)`
   padding: 0 5%;
@@ -123,11 +123,19 @@ const Projects = () => {
             <ProjectName>{header}</ProjectName>
             <Description>{text}</Description>
             <Links>
-              <Link rel="noopener" target="_blank" href={link}>
+              <Link
+                className={header}
+                rel="noopener"
+                target="_blank"
+                href={link}
+              >
                 <i className="uil uil-external-link-alt" />
               </Link>
               {document && (
-                <DocumentLink href={document}>
+                <DocumentLink
+                  className="hosco recommendation letter"
+                  href={document}
+                >
                   <i className="uil uil-file-alt" />
                 </DocumentLink>
               )}
