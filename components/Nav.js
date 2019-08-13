@@ -70,7 +70,7 @@ export default function Navbar() {
       </Logo>
 
       <IconGroup>
-        <NavItem rel="noopener" href="mailto:bjoern.rave@gmail.com">
+        <NavItem rel="noopener" href="mailto:rahwn-websites@gmail.com">
           <Icon className="uil uil-envelope" />
           <ItemLabel>Write me!</ItemLabel>
         </NavItem>

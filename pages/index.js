@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import InvertedTriangle from "../components/InvertedTriangle";
 import NavBar from "../components/Nav";
 import PerksOverview from "../components/PerksOverview";
 import Person from "../components/Person";
 import Projects from "../components/Projects";
-import TypeWriter from "../components/TypeWriter";
-import InvertedTriangle from "../components/InvertedTriangle";
 import Triangle from "../components/Triangle";
+import TypeWriter from "../components/TypeWriter";
 
 const FirstView = styled.div`
   display: grid;
@@ -60,50 +61,6 @@ const BottomHeader = styled.h3`
   }
 `;
 
-const Contact = styled.a`
-  background-color: white;
-  background: rgba(210, 255, 82, 1);
-  background: linear-gradient(
-    135deg,
-    rgba(210, 255, 82, 1) 0%,
-    rgba(75, 156, 0, 1) 74%,
-    rgba(75, 156, 0, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#4b9c00', GradientType=1 );
-
-  border-radius: 20px;
-  padding: 15px;
-  margin: 0 10px;
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  display: table;
-
-  :hover {
-    box-shadow: 0 0 20px rgba(210, 255, 82, 1);
-  }
-
-  i {
-    margin-left: 5px;
-  }
-`;
-
-const ContactBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const ContactHeader = styled.h3`
-  color: white;
-  font-size: 50px;
-`;
-
-const ContactButtons = styled.div`
-  display: flex;
-`;
-
 export default function Index() {
   return (
     <>
@@ -123,25 +80,7 @@ export default function Index() {
       <BottomSection>
         <Person />
         <Projects />
-        <ContactBox>
-          <ContactHeader>Get in Contact</ContactHeader>
-          <ContactButtons>
-            <Contact
-              href="mailto:rahwn-websites@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Email App <i className="uil uil-envelope" />
-            </Contact>
-            <Contact
-              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=rahwnwebsites@gmail.com&su&cc&bcc&body&tf=1"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Gmail <i className="uil uil-google" />
-            </Contact>
-          </ContactButtons>
-        </ContactBox>
+        <Contact />
       </BottomSection>
       <Footer />
     </>

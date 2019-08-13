@@ -18,8 +18,12 @@ const TopBox = styled.div`
   background-color: black;
   width: 100%;
 
-  @media (max-width: 1330px) {
+  @media (max-width: 1430px) {
     height: 150px;
+  }
+
+  @media (max-width: 1300px) {
+    height: 200px;
   }
 
   @media (max-width: 1100px) {
@@ -28,10 +32,6 @@ const TopBox = styled.div`
 
   @media (max-width: 980px) {
     height: 250px;
-  }
-
-  @media (max-width: 860px) {
-    display: none;
   }
 `;
 

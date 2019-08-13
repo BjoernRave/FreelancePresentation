@@ -4,7 +4,6 @@ import styled from "styled-components";
 const PersonWrapper = styled.section`
   display: flex;
   align-items: center;
-  padding: 80px 0 80px 10%;
   background-color: black;
   padding-bottom: 100px;
   position: relative;
@@ -47,10 +46,14 @@ const BackgroundText = styled.p`
   font-size: 30vw;
   font-weight: bold;
   opacity: 0.2;
-  top: -50%;
-  width: 100%;
+  top: -450px;
   word-wrap: break-word;
   line-height: 450px;
+
+  @media (max-width: 860px) {
+    top: -280px;
+    left: -20px;
+  }
 `;
 
 export default function Person() {

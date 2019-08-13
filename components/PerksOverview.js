@@ -1,5 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useAnimation } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import { useScrollPosition } from "../lib/useScrollPosition";
 import local from "../static/bcn.png";
 import hands from "../static/Cooperation.png";
 import tools from "../static/ModernTools.png";
@@ -7,9 +9,31 @@ import speed from "../static/PageSpeed.png";
 import responsive from "../static/responsive-web-design.png";
 import seo from "../static/SeoGoogle.png";
 import Perk, { Image, ImageWrapper, PerkWrapper } from "./Perk";
-import { useAnimation } from "framer-motion";
-import { useScrollPosition } from "../lib/useScrollPosition";
 
+const PerksSection = styled.section`
+  display: grid;
+  grid-gap: 10%;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    ". local ."
+    "seo . modern"
+    ". responsive ."
+    "speed . flexible";
+  margin: 0 5%;
+  margin-bottom: 300px;
+  padding-top: 150px;
+
+  @media (max-width: 1200px) {
+    grid-gap: 0%;
+  }
+
+  @media (max-width: 860px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0 20%;
+  }
+`;
 const LocalPerk = styled(PerkWrapper)`
   grid-area: local;
   color: white;
@@ -68,27 +92,6 @@ const SpeedPerk = styled(PerkWrapper)`
 `;
 const ResponsivePerk = styled(PerkWrapper)`
   grid-area: responsive;
-`;
-
-const PerksSection = styled.section`
-  display: grid;
-  grid-gap: 10%;
-  grid-template-columns: auto auto auto;
-  grid-template-areas:
-    ". local ."
-    "seo . modern"
-    ". responsive ."
-    "speed . flexible";
-  margin: 0 5%;
-  margin-bottom: 300px;
-  padding-top: 150px;
-
-  @media screen and (max-width: 860px) {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    gap: 0;
-  }
 `;
 
 export default function PerksOverview() {
