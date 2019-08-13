@@ -6,15 +6,7 @@ export default function Meta() {
     <Head>
       <meta charSet="utf-8" />
       <title>Rahwn Websites | I create custom websites for you</title>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-      />
       <link rel="canonical" href="https://www.rahwn.com" />
-      <link
-        rel="stylesheet"
-        href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css"
-      />
       <meta
         name="google-site-verification"
         content="Ae-htyf1XdbadkG7FXD6BbOsyw_oYgzsmqjMlX7_Krc"
@@ -39,7 +31,7 @@ export default function Meta() {
       />
       <meta
         name="twitter:image"
-        content="https://www.rahwn.com/static/Logo.png"
+        content="https://www.rahwn.com/static/RahwnLogo.png"
       />
       <meta name="twitter:site" content="@bjoern_rave" />
       <meta name="twitter:creator" content="@bjoern_rave" />
@@ -56,7 +48,7 @@ export default function Meta() {
       <meta property="og:url" content="https://www.rahwn.com" />
       <meta
         property="og:image"
-        content="https://www.rahwn.com/static/Raven1.png"
+        content="https://www.rahwn.com/static/RahwnLogo.png"
       />
       <script
         type="application/ld+json"
@@ -84,6 +76,11 @@ export default function Meta() {
  "https://www.linkedin.com/in/bjoern-rave/"
  ]}`
         }}
+      />
+      <link
+        async
+        rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css"
       />
     </Head>
   );

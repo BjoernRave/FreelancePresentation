@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../static/Logo.png";
+import logo from "../static/RahwnLogo.png";
 
 const NavBar = styled.nav`
   display: flex;
