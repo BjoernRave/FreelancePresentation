@@ -35,7 +35,7 @@ const PerkDescription = styled.p`
   }
 `;
 
-const PerkHeader = styled.h5`
+const PerkHeader = styled.h2`
   font-size: 2.6rem;
   margin: 0;
   margin-top: 20px;

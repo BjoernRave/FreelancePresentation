@@ -162,7 +162,7 @@ const projects = [
     img: Splitterz,
     header: "Splitterz",
     text:
-      "It was my first project and it taught me alot about programming but also about marketing, monetizing and advertising.  - It is made with Unity3D and C#. I made all the graphics and game mechanics myself.",
+      "It was my first project and it taught me a lot about programming but also about marketing, monetizing and advertising.  - It is made with Unity3D and C#. I made all the graphics and game mechanics myself.",
     link:
       "https://play.google.com/store/apps/details?id=com.EnterRavement.Splitterz&hl=en"
   },

@@ -25,17 +25,17 @@ const StyledTyping = styled(Typing)`
 
 export default function TypeWriter() {
   return (
-    <StyledTyping loop={true} cursor={<Cursor />} speed={10}>
+    <StyledTyping loop={true} cursor={<Cursor />} speed={20}>
       <MainHeader>a web presence</MainHeader>
-      <Typing.Backspace delay={2000} speed={-20} count={15} />
-      <MainHeader>a custom CMS</MainHeader>
-      <Typing.Backspace delay={2000} speed={-20} count={15} />
+      <Typing.Backspace delay={2000} count={15} />
       <MainHeader>fully customized experiences</MainHeader>
-      <Typing.Backspace delay={2000} speed={-20} count={29} />
+      <Typing.Backspace delay={2000} count={29} />
       <MainHeader>complex solutions</MainHeader>
-      <Typing.Backspace delay={1700} speed={-20} count={18} />
+      <Typing.Backspace delay={1700} count={18} />
       <MainHeader>an e-commerce store</MainHeader>
-      <Typing.Backspace delay={2000} speed={-20} count={20} />
+      <Typing.Backspace delay={2000} count={20} />
+      <MainHeader>a custom CMS</MainHeader>
+      <Typing.Backspace delay={2000} count={15} />
     </StyledTyping>
   );
 }

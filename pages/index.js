@@ -18,6 +18,11 @@ const FirstView = styled.div`
   height: calc(100% - 70px);
 `;
 
+const HiddenHeader = styled.h1`
+  visibility: hidden;
+  display: none;
+`;
+
 const TopSection = styled.section`
   height: 100vh;
   margin: 0 5%;
@@ -51,6 +56,8 @@ const BottomHeader = styled.h3`
   color: #fff;
   font-size: 50px;
   justify-self: end;
+  margin: 0;
+  margin-top: -20px;
 
   @media (max-width: 768px) {
     font-size: 4rem;
@@ -67,6 +74,9 @@ export default function Index() {
       <TopSection>
         <NavBar />
         <FirstView>
+          <HiddenHeader>
+            I can create a custom web experience for you
+          </HiddenHeader>
           <TopHeader>I can create</TopHeader>
           <TypeWriter />
           <BottomHeader>for you.</BottomHeader>
