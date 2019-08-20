@@ -35,7 +35,7 @@ const PersonHeader = styled.h4`
 `;
 
 const PersonText = styled.p`
-  font-size: 2rem;
+  font-size: 1.8rem;
   z-index: 1;
 `;
 
@@ -62,10 +62,10 @@ export default function Person() {
       <TextBox>
         <PersonHeader>Hi, I am Björn Rave</PersonHeader>
         <PersonText>
-          I am a fullstack engineer and passionate web developer from germany.
-          Working in a thriving startup for the last year I could gain a lot of
-          insights and knowledge in all areas neccessary to run and maintain a
-          high demand enterprise-grade website.
+          I am a fullstack engineer and passionate web developer from northern
+          germany. Working in a thriving startup for the last year I could gain
+          a lot of insights and knowledge in all areas neccessary to run and
+          maintain a high demand enterprise-grade website.
         </PersonText>
       </TextBox>
       <BackgroundText>Rahwn</BackgroundText>

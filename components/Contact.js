@@ -3,15 +3,6 @@ import styled from "styled-components";
 
 const ContactButton = styled.a`
   background-color: white;
-  background: rgba(210, 255, 82, 1);
-  background: linear-gradient(
-    135deg,
-    rgba(210, 255, 82, 1) 0%,
-    rgba(75, 156, 0, 1) 74%,
-    rgba(75, 156, 0, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#4b9c00', GradientType=1 );
-
   border-radius: 20px;
   padding: 15px;
   margin: 10px;
@@ -20,28 +11,15 @@ const ContactButton = styled.a`
   color: black;
   text-decoration: none;
   display: table;
+  transition: all linear 0.1s;
 
   :hover {
-    box-shadow: 0 0 20px rgba(210, 255, 82, 1);
+    box-shadow: 0 0 20px white;
   }
 
   i {
     margin-left: 5px;
   }
-`;
-
-const MeetingButton = styled(ContactButton)`
-  background: #e96443; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #e96443,
-    #904e95
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #e96443,
-    #904e95
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `;
 
 const ContactWrapper = styled.div`
@@ -81,13 +59,13 @@ const Contact = () => {
           Gmail <i className="uil uil-google" />
         </ContactButton>
       </ContactButtons>
-      <MeetingButton
+      <ContactButton
         href="https://calendly.com/bjoern-rave/15min"
         target="_blank"
         rel="noreferrer"
       >
         Schedule a meeting <i className="uil uil-calendar-alt" />
-      </MeetingButton>
+      </ContactButton>
     </ContactWrapper>
   );
 };

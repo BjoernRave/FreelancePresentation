@@ -4,7 +4,7 @@
   "description": "Online Presence of my web development services",
   "main": "pages/index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 3001",
     "build": "next build",
     "start": "next start",
     "export": "next export",

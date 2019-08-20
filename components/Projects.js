@@ -41,7 +41,7 @@ const Image = styled.img`
 const ProjectName = styled.h5`
   font-weight: bold;
   grid-area: Header;
-  font-size: 2.6rem;
+  font-size: 3rem;
   color: white;
   margin: 0;
   margin-top: 25px;
@@ -49,7 +49,7 @@ const ProjectName = styled.h5`
 
 const Description = styled.p`
   grid-area: Description;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   margin: 0;
   line-height: 3rem;
@@ -151,6 +151,14 @@ export default Projects;
 
 const projects = [
   {
+    img: HoscoLogo,
+    header: "Hosco",
+    text:
+      "This was the project, where I really became a professional programmer. I was working for 9 months in a startup in Barcelona, which is on its mission to conquer the international job market. It's core is a website, similar to Linkedin, but focussed on the hospitality sector. I was working full-time as a full-stack engineer on the website, added new features, polished old thing. Because of the small size I could get insights in every aspect of software development.",
+    link: "https://www.hosco.com",
+    document: "static/HoscoRecommendationLetter.pdf"
+  },
+  {
     img: Splitterz,
     header: "Splitterz",
     text:
@@ -164,21 +172,13 @@ const projects = [
     text:
       "This is a website to inform about crypto currency prices and exchange about the development of the different coins. Sadly the API's I used to get the cryptocurreny data are not working anymore and I haven't found any time to fix it 😅",
     link: "https://www.crowdvotecrypto.com"
-  },
+  }
   // {
   //   img: GallowayPic,
   //   header: "Dithmarscher Galloways",
   //   text:
   //     "A website I created for a friend of mine. He and his family sell meat from galloway cows"
   // },
-  {
-    img: HoscoLogo,
-    header: "Hosco",
-    text:
-      "This was the project, where I really became a professional programmer. I was working for 9 months in a startup in Barcelona, which is on its mission to conquer the international job market. It's core is a website, similar to Linkedin, but focussed on the hospitality sector. I was working full-time as a full-stack engineer on the website, added new features, polished old thing. Because of the small size I could get insights in every aspect of software development.",
-    link: "https://www.hosco.com",
-    document: "static/HoscoRecommendationLetter.pdf"
-  }
   // {
   //   img: SplitterzGif,
   //   header: "CoolPlaces",

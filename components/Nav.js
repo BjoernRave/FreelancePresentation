@@ -40,11 +40,19 @@ const LogoImage = styled.img`
 const Logo = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 767px) {
+    margin-left: -20px;
+  }
 `;
 
 const LogoText = styled.p`
   margin-left: 5px;
   font-size: 18px;
+
+  @media (max-width: 767px) {
+    margin-left: -10px;
+  }
 `;
 
 const IconGroup = styled.div`
@@ -72,7 +80,7 @@ export default function Navbar() {
       <IconGroup>
         <NavItem rel="noopener" href="mailto:rahwn-websites@gmail.com">
           <Icon className="uil uil-envelope" />
-          <ItemLabel>Write me!</ItemLabel>
+          <ItemLabel>Contact</ItemLabel>
         </NavItem>
         <NavItem
           rel="noopener"
@@ -80,7 +88,7 @@ export default function Navbar() {
           target="_blank"
         >
           <Icon className="uil uil-github" />
-          <ItemLabel>See my code</ItemLabel>
+          <ItemLabel>Code</ItemLabel>
         </NavItem>
         <NavItem
           rel="noopener"
@@ -88,7 +96,7 @@ export default function Navbar() {
           target="_blank"
         >
           <Icon className="uil uil-linkedin" />
-          <ItemLabel>See my experience</ItemLabel>
+          <ItemLabel>Experience</ItemLabel>
         </NavItem>
       </IconGroup>
     </NavBar>

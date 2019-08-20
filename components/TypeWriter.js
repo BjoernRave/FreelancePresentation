@@ -28,9 +28,7 @@ export default function TypeWriter() {
     <StyledTyping loop={true} cursor={<Cursor />} speed={10}>
       <MainHeader>a web presence</MainHeader>
       <Typing.Backspace delay={2000} speed={-20} count={15} />
-      <MainHeader>an image gallery</MainHeader>
-      <Typing.Backspace delay={2500} speed={-20} count={17} />
-      <MainHeader>a contact form</MainHeader>
+      <MainHeader>a custom CMS</MainHeader>
       <Typing.Backspace delay={2000} speed={-20} count={15} />
       <MainHeader>fully customized experiences</MainHeader>
       <Typing.Backspace delay={2000} speed={-20} count={29} />

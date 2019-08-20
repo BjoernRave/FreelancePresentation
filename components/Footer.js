@@ -4,6 +4,7 @@ import styled from "styled-components";
 const FooterWrapper = styled.footer`
   padding-top: 50px;
   background-color: black;
+  padding-bottom: 20px;
 `;
 
 const Note = styled.p`
