@@ -88,8 +88,8 @@ export default function Index() {
         <InvertedTriangle />
       </MiddleSection>
       <BottomSection>
-        <Person />
         <Projects />
+        <Person />
         <Contact />
       </BottomSection>
       <Footer />

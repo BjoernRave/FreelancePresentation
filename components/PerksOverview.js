@@ -12,7 +12,6 @@ import Perk, { Image, ImageWrapper, PerkWrapper } from "./Perk";
 
 const PerksSection = styled.section`
   display: grid;
-  grid-gap: 10%;
   grid-template-columns: auto auto auto;
   grid-template-areas:
     ". local ."
@@ -20,7 +19,7 @@ const PerksSection = styled.section`
     ". responsive ."
     "speed . flexible";
   margin: 0 5%;
-  margin-bottom: 300px;
+  margin-bottom: -3px;
   padding-top: 150px;
 
   @media (max-width: 1200px) {

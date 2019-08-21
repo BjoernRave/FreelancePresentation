@@ -25,7 +25,8 @@ const NavItem = styled.a`
   }
 
   @media (max-width: 860px) {
-    margin-left: 10px;
+    margin-left: 0px;
+    transform: scale(0.8);
   }
 `;
 

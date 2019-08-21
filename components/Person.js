@@ -14,9 +14,9 @@ const PersonWrapper = styled.section`
 `;
 
 const Image = styled.img`
-  width: 100%;
   height: auto;
   z-index: 1;
+  width: 50%;
 
   @media (max-width: 860px) {
     width: 90%;

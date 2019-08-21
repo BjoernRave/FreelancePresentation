@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledInvertedTriangle = styled.div`
   position: absolute;
   width: 100%;
-  bottom: -305px;
+  bottom: 0px;
   z-index: -1;
 
   @media (max-width: 860px) {
