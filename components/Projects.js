@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useScrollPosition } from "../lib/useScrollPosition";
 import CWCLogo from "../static/CWCLogo.png";
 import HoscoLogo from "../static/hosco.png";
+import Plezzles from "../static/PlezzlesLogoWhiteBG.png";
 import Splitterz from "../static/Splitterz.png";
 
 const ProjectsWrapper = styled(motion.section)`
@@ -28,7 +29,6 @@ const Project = styled(motion.div)`
 `;
 
 const Image = styled.img`
-  grid-area: Image;
   width: 100%;
   border-radius: 40px;
   height: auto;
@@ -119,7 +119,14 @@ const Projects = () => {
             animate={animation}
             key={index}
           >
-            <Image alt={header} src={img} />
+            <a
+              style={{ gridArea: "Image" }}
+              rel="noopener"
+              target="_blank"
+              href={link}
+            >
+              <Image alt={header} src={img} />
+            </a>
             <ProjectName>{header}</ProjectName>
             <Description>{text}</Description>
             <Links>
@@ -151,6 +158,13 @@ export default Projects;
 
 const projects = [
   {
+    img: Plezzles,
+    header: "Plezzles",
+    text:
+      "This is my newest project. It is a platform for people to share and find places and events. You can also create communities, local chat groups, to talk with like-minded people in your area.",
+    link: "https://www.plezzles.com"
+  },
+  {
     img: HoscoLogo,
     header: "Hosco",
     text:
@@ -170,7 +184,7 @@ const projects = [
     img: CWCLogo,
     header: "CrowdVoteCrypto",
     text:
-      "This is a website to inform about crypto currency prices and exchange about the development of the different coins. Sadly the API's I used to get the cryptocurreny data are not working anymore and I haven't found any time to fix it 😅",
+      "This is a website to inform about crypto currency prices and exchange about the development of the different coins. Sadly the API's I used to get the cryptocurreny data are not working anymore and I haven't found any time to fix it 😅.",
     link: "https://www.crowdvotecrypto.com"
   }
   // {

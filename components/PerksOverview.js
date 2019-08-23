@@ -150,14 +150,14 @@ const content = [
     StyledPerk: ModernPerk,
     header: "Modern Technologies",
     text:
-      "My website creation tools are following the newest standards on the market. Do you need a Progressive Web App? I can create it. Do you want source code, with a clear structure, so other people could eventually pick it up again and extend it right away? No problem"
+      "My website creation tools are following the newest standards on the market. Do you need a Progressive Web App? I can create it. Do you want source code, with a clear structure, so other people could eventually pick it up again and extend it right away? No problem!"
   },
   {
     img: responsive,
     StyledPerk: ResponsivePerk,
     header: "Responsive Web Design",
     text:
-      "This means my websites look good on multiple screen sizes, so no matter if your customer is using their phone, laptop or tablet, your website will always look great"
+      "This means my websites look good on multiple screen sizes, so no matter if your customer is using their phone, laptop or tablet, your website will always look great."
   },
   {
     img: speed,
@@ -171,6 +171,6 @@ const content = [
     StyledPerk: FlexiblePerk,
     header: "Flexible Cooperation ",
     text:
-      "I value partnerships where both parties can benefit. I am fully transparent with my work and the amount of time I require for your project"
+      "I value partnerships where both parties can benefit. I am fully transparent with my work and the amount of time I require for your project."
   }
 ];
