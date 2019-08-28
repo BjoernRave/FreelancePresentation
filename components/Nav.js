@@ -79,7 +79,7 @@ export default function Navbar() {
       </Logo>
 
       <IconGroup>
-        <NavItem rel="noopener" href="mailto:rahwn-websites@gmail.com">
+        <NavItem rel="noopener" href="mailto:contact@rahwn.com">
           <Icon className="uil uil-envelope" />
           <ItemLabel>Contact</ItemLabel>
         </NavItem>

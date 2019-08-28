@@ -34,7 +34,7 @@ const Image = styled.img`
   height: auto;
 
   @media (max-width: 860px) {
-    width: 50%;
+    width: 300px;
   }
 `;
 

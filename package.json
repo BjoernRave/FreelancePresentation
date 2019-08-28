@@ -26,5 +26,18 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^9.0.3"
+  },
+  "babel": {
+    "presets": [
+      "next/babel"
+    ],
+    "plugins": [
+      [
+        "styled-components",
+        {
+          "ssr": true
+        }
+      ]
+    ]
   }
 }

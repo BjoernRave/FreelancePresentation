@@ -45,14 +45,14 @@ const Contact = () => {
       <ContactHeader>Get in Contact</ContactHeader>
       <ContactButtons>
         <ContactButton
-          href="mailto:rahwn-websites@gmail.com"
+          href="mailto:contact@rahwn.com"
           target="_blank"
           rel="noreferrer"
         >
           Email App <i className="uil uil-envelope" />
         </ContactButton>
         <ContactButton
-          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=rahwnwebsites@gmail.com&su&cc&bcc&body&tf=1"
+          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=contact@rahwn.com&su&cc&bcc&body&tf=1"
           target="_blank"
           rel="noreferrer"
         >
